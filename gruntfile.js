@@ -85,7 +85,7 @@ module.exports = function(grunt) {
 		uglify: {
 			main: {
 				options: {
-					mangle: false
+					mangle: true
 				},
 				files: {
 					'js/backstretch.min.js'         : [ 'js/backstretch.js' ],
@@ -114,6 +114,8 @@ module.exports = function(grunt) {
 		if ( name ) {
 		    grunt.log.writeln( 'Zipping up the project with the name "' + name + '".');
 			global.name = name;
+		    grunt.task.run( 'less' );
+		    grunt.task.run( 'uglify' );
 		    grunt.task.run( 'compress' );
 		} else {
 			grunt.fail.fatal( 'No project name provided for the zip. Please run "grunt zip:name".' );
@@ -122,6 +124,6 @@ module.exports = function(grunt) {
 
 	// Register tasks
 	grunt.registerTask( 'default', [
-		'less'
+		'less','uglify'
 	]);
 };
