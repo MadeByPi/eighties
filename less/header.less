@@ -1,10 +1,16 @@
 /** -----------------------------------------------------:[ 14.0 - Header ]:---------- */
 .site {
 	&-header {
+	    max-height:480px;
 		&.skrollable {
 			height: 0;
 		}
+    	
+    	@media screen and (max-width: 320px) {		
+    	    max-height:160px;
+    	}	
 	}
+	
 	&-branding {
 		clear: both;
 		padding: 10em 0;
@@ -12,29 +18,40 @@
 	}
 	&-title, 
 	&-description {
-		font-family: 'Righteous', cursive;
+		font-family: 'Open Sans', cursive;
 		color: white;
 		margin: 0;
 		.hyphens();
 	}
+	
 	&-title {
 		.font-size( 160 );
-		line-height: 1.1;
+		word-wrap: normal;
+		line-height: 1.0;
 		a {
 			color: white;
 		}
 	}
+	
 	&-description {
 		margin-top: 1.5em;
 	}
+	
 	@media screen and (max-width: 1000px) {
 		&-branding {
-			clear: both;
-			padding: 5em 0;
-			text-align: center;
+			padding: 3.5em 0!important; /* theme has inline styles in html - needs investigate so we don't need important here */
 		}
 		&-title {
 			.font-size( 80 );
+		}
+	}
+	
+	@media screen and (max-width: 320px) {				
+		&-branding {
+			padding: 2.66em 0!important; /* theme has inline styles in html - needs investigate so we don't need important here */
+		}
+		&-title {
+			.font-size( 70 );
 		}
 	}
 }

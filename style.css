@@ -188,11 +188,11 @@ a img {
 /** -----------------------------------------------------:[ 2.0 - Typography ]:---------- */
 ::-moz-selection {
   color: #FFF;
-  background: #f2777a;
+  background: #009edf;
 }
 ::selection {
   color: #FFF;
-  background: #f2777a;
+  background: #009edf;
 }
 html {
   font-size: 18px;
@@ -219,8 +219,8 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: 'Varela Round', sans-serif;
-  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 h1 {
   margin-top: 0.8888888888888888em;
@@ -465,14 +465,14 @@ textarea {
   cursor: pointer;
   display: inline-block;
   padding: 1em;
-  background: #f2777a;
+  background: #009edf;
   border: 0;
   border-radius: 2px;
   box-shadow: none;
   color: #FFF;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   -webkit-transition: box-shadow 100ms linear, border-color 100ms linear;
   -moz-transition: box-shadow 100ms linear, border-color 100ms linear;
   -o-transition: box-shadow 100ms linear, border-color 100ms linear;
@@ -484,8 +484,8 @@ textarea {
 .btn:hover,
 .btn:focus,
 .btn:active {
-  background: #f2777a;
-  box-shadow: 0 0 0 3px #f2777a;
+  background: #009edf;
+  box-shadow: 0 0 0 3px #009edf;
   color: #FFF;
 }
 .btn-full {
@@ -536,14 +536,14 @@ input[type="submit"] {
   cursor: pointer;
   display: inline-block;
   padding: 1em;
-  background: #f2777a;
+  background: #009edf;
   border: 0;
   border-radius: 2px;
   box-shadow: none;
   color: #FFF;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   -webkit-transition: box-shadow 100ms linear, border-color 100ms linear;
   -moz-transition: box-shadow 100ms linear, border-color 100ms linear;
   -o-transition: box-shadow 100ms linear, border-color 100ms linear;
@@ -564,8 +564,8 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-  background: #f2777a;
-  box-shadow: 0 0 0 3px #f2777a;
+  background: #009edf;
+  box-shadow: 0 0 0 3px #009edf;
   color: #FFF;
 }
 button-full,
@@ -853,13 +853,13 @@ textarea:focus {
   content: "\f071";
 }
 .error {
-  background: #f2777a;
+  background: #009edf;
 }
 .error a:hover {
-  background-color: #ee484c;
+  background-color: #007aac;
 }
 .error:before {
-  border-right-color: #f48e91;
+  border-right-color: #00b0f9;
 }
 .error:after {
   content: "\f00d";
@@ -879,7 +879,7 @@ textarea:focus {
 /** -----------------------------------------------------:[ 5.0 - Navigation ]:---------- */
 /** ----------------------------------------:[ 5.1 - Links ]:--- */
 a {
-  color: #f2777a;
+  color: #009edf;
   text-decoration: none;
   -webkit-transition: color 200ms ease;
   -moz-transition: color 200ms ease;
@@ -949,7 +949,7 @@ a:active {
 }
 /** ---:[ Styles ]:--- */
 .main-navigation {
-  background: #f2777a;
+  background: #009edf;
   display: none;
 }
 .main-navigation ul {
@@ -1066,7 +1066,7 @@ a:active {
 }
 .js .main-navigation li a:hover,
 .js .main-navigation li a:active {
-  color: #f2777a;
+  color: #009edf;
 }
 .js .main-navigation li:hover ul,
 .js .main-navigation li:hover ul ul,
@@ -1329,14 +1329,14 @@ a:active {
   cursor: pointer;
   display: inline-block;
   padding: 1em;
-  background: #f2777a;
+  background: #009edf;
   border: 0;
   border-radius: 2px;
   box-shadow: none;
   color: #FFF;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   -webkit-transition: box-shadow 100ms linear, border-color 100ms linear;
   -moz-transition: box-shadow 100ms linear, border-color 100ms linear;
   -o-transition: box-shadow 100ms linear, border-color 100ms linear;
@@ -1363,8 +1363,8 @@ a:active {
 .paging-navigation .nav-next a:active,
 .post-navigation .nav-next a:active,
 .comment-navigation .nav-next a:active {
-  background: #f2777a;
-  box-shadow: 0 0 0 3px #f2777a;
+  background: #009edf;
+  box-shadow: 0 0 0 3px #009edf;
   color: #FFF;
 }
 .paging-navigation .nav-previous a-full,
@@ -1581,14 +1581,14 @@ a:active {
   cursor: pointer;
   display: inline-block;
   padding: 1em;
-  background: #f2777a;
+  background: #009edf;
   border: 0;
   border-radius: 2px;
   box-shadow: none;
   color: #FFF;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   -webkit-transition: box-shadow 100ms linear, border-color 100ms linear;
   -moz-transition: box-shadow 100ms linear, border-color 100ms linear;
   -o-transition: box-shadow 100ms linear, border-color 100ms linear;
@@ -1600,8 +1600,8 @@ a:active {
 .js #infinite-handle span:hover,
 .js #infinite-handle span:focus,
 .js #infinite-handle span:active {
-  background: #f2777a;
-  box-shadow: 0 0 0 3px #f2777a;
+  background: #009edf;
+  box-shadow: 0 0 0 3px #009edf;
   color: #FFF;
 }
 .js #infinite-handle span-full {
@@ -1890,7 +1890,7 @@ a:active {
   color: #FFF;
 }
 .js .widget.widget_tag_cloud a:hover {
-  background-color: #f2777a;
+  background-color: #009edf;
 }
 .js .widget .menu li {
   padding: 0;
@@ -2023,7 +2023,7 @@ a:active {
   color: #2d2d2d;
 }
 .entry-title a:hover {
-  color: #f2777a;
+  color: #009edf;
 }
 .entry-meta i {
   margin-right: .4em;
@@ -2053,7 +2053,7 @@ a:active {
   transition: background 200ms linear, color 200ms linear;
 }
 .entry-meta-tags a:hover {
-  background: #f2777a;
+  background: #009edf;
   color: #FFF;
 }
 .entry-image {
@@ -2105,7 +2105,7 @@ a:active {
 .js .blog .sticky .entry-title a:hover,
 .js .archive .sticky .entry-title a:hover,
 .js .search .sticky .entry-title a:hover {
-  color: #f2777a;
+  color: #009edf;
 }
 .js .blog .sticky .entry-summary a,
 .js .archive .sticky .entry-summary a,
@@ -2156,7 +2156,7 @@ a:active {
   border-bottom: 1px solid #f6f6f6;
 }
 .no-js .sticky {
-  border-left: 5px solid #f2777a;
+  border-left: 5px solid #009edf;
 }
 /** ----------------------------------------:[ 10.2 - Post Formats ]:--- */
 /** ---:[ With JavaScript ]:--- */
@@ -2458,8 +2458,8 @@ a:active {
   padding: 0;
 }
 #comments .comment #respond .cancel-comment a:hover {
-  border-color: #f2777a;
-  color: #f2777a;
+  border-color: #009edf;
+  color: #009edf;
 }
 #comments .pingback {
   margin: 1em 0;
@@ -2482,7 +2482,7 @@ a:active {
 }
 #comments .bypostauthor {
   padding-right: 1em;
-  border-right: 3px solid #f2777a;
+  border-right: 3px solid #009edf;
 }
 #respond {
   position: relative;
@@ -2504,7 +2504,7 @@ a:active {
   position: absolute;
   top: 12px;
   right: 12px;
-  color: #f2777a;
+  color: #009edf;
   font-size: 1.5em;
 }
 #respond #reply-title {
@@ -2520,7 +2520,7 @@ a:active {
   color: #ececec;
 }
 #respond #reply-title a:hover {
-  color: #f2777a;
+  color: #009edf;
 }
 #respond #comment {
   height: 75px;
@@ -2597,14 +2597,14 @@ a:active {
   cursor: pointer;
   display: inline-block;
   padding: 1em;
-  background: #f2777a;
+  background: #009edf;
   border: 0;
   border-radius: 2px;
   box-shadow: none;
   color: #FFF;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   -webkit-transition: box-shadow 100ms linear, border-color 100ms linear;
   -moz-transition: box-shadow 100ms linear, border-color 100ms linear;
   -o-transition: box-shadow 100ms linear, border-color 100ms linear;
@@ -2616,8 +2616,8 @@ a:active {
 #respond .form-submit input:hover,
 #respond .form-submit input:focus,
 #respond .form-submit input:active {
-  background: #f2777a;
-  box-shadow: 0 0 0 3px #f2777a;
+  background: #009edf;
+  box-shadow: 0 0 0 3px #009edf;
   color: #FFF;
 }
 #respond .form-submit input-full {
@@ -2911,8 +2911,16 @@ object {
 }
 /** ---:[ With JavaScript ]:--- */
 /** -----------------------------------------------------:[ 14.0 - Header ]:---------- */
+.site-header {
+  max-height: 480px;
+}
 .site-header.skrollable {
   height: 0;
+}
+@media screen and (max-width: 320px) {
+  .site-header {
+    max-height: 160px;
+  }
 }
 .site-branding {
   clear: both;
@@ -2921,7 +2929,7 @@ object {
 }
 .site-title,
 .site-description {
-  font-family: 'Righteous', cursive;
+  font-family: 'Open Sans', cursive;
   color: white;
   margin: 0;
   word-wrap: break-word;
@@ -2934,7 +2942,8 @@ object {
 .site-title {
   font-size: 160px;
   font-size: 8.88888888888889rem;
-  line-height: 1.1;
+  word-wrap: normal;
+  line-height: 1.0;
 }
 .site-title a {
   color: white;
@@ -2944,13 +2953,22 @@ object {
 }
 @media screen and (max-width: 1000px) {
   .site-branding {
-    clear: both;
-    padding: 5em 0;
-    text-align: center;
+    padding: 3.5em 0!important;
+    /* theme has inline styles in html - needs investigate so we don't need important here */
   }
   .site-title {
     font-size: 80px;
     font-size: 4.444444444444445rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .site-branding {
+    padding: 2.66em 0!important;
+    /* theme has inline styles in html - needs investigate so we don't need important here */
+  }
+  .site-title {
+    font-size: 70px;
+    font-size: 3.888888888888889rem;
   }
 }
 /** ----------------------------------------:[ 14.1 - Site Toggles ]:--- */
@@ -3130,14 +3148,14 @@ input#carousel-reblog-submit {
   cursor: pointer;
   display: inline-block;
   padding: 1em;
-  background: #f2777a;
+  background: #009edf;
   border: 0;
   border-radius: 2px;
   box-shadow: none;
   color: #FFF;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   -webkit-transition: box-shadow 100ms linear, border-color 100ms linear;
   -moz-transition: box-shadow 100ms linear, border-color 100ms linear;
   -o-transition: box-shadow 100ms linear, border-color 100ms linear;
@@ -3152,8 +3170,8 @@ input#carousel-reblog-submit:hover,
 input#carousel-reblog-submit:focus,
 #jp-carousel-comment-form-button-submit:active,
 input#carousel-reblog-submit:active {
-  background: #f2777a;
-  box-shadow: 0 0 0 3px #f2777a;
+  background: #009edf;
+  box-shadow: 0 0 0 3px #009edf;
   color: #FFF;
 }
 #jp-carousel-comment-form-button-submit-full,
