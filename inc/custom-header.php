@@ -159,7 +159,8 @@ function eighties_admin_header_style() {
 			<?php if ( 'blank' == get_header_textcolor() ) : ?>
 				display: none;
 			<?php endif; ?>
-			font-family: 'Righteous', 'Open Sans', cursive;
+			font-family: 'Open Sans', cursive;
+			font-weight:400;
 			width: 100%;
 			text-align: center;
 		}
