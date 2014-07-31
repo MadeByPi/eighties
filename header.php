@@ -37,7 +37,7 @@
 		</nav><!-- #site-navigation -->
 
 		<?php if ( eighties_header_image() || get_theme_mod( 'header_textcolor' ) !== 'blank' ) : ?>
-			<header id="masthead" class="site-header" role="banner">
+			<header id="masthead" class="site-header<?php echo (eighties_header_is_featured_image()) ? ' featured' : '' ?>" role="banner">
 				<a class="skip-link screen-reader-text" href="#content" <?php echo ( eighties_header_image() ) ? 'data-backstretch="' . eighties_header_image() . '"' : ''; ?>><?php _e( 'Skip to content', 'eighties' ); ?></a>
 				<div class="site-branding">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>

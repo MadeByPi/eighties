@@ -299,3 +299,19 @@ function eighties_header_image() {
 
 	return false;
 }
+
+
+
+function eighties_header_is_featured_image() {
+	// If the current them does not support custom header, return false.
+	if ( ! get_theme_support( 'custom-header' ) ) {
+		return false;
+	}
+
+	// If is singular, has post thumbnail and is set to display the featured image, return the image.
+	if ( is_singular() && has_post_thumbnail( get_the_ID() ) && get_theme_mod( 'eighties_singular_header_image' ) === 'featured_image' ) {
+		return true;
+	}
+
+	return false;
+}
