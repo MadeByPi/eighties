@@ -51,7 +51,7 @@ function eighties_header_style() {
 	<style type="text/css">
 	<?php
 		// Has the text been hidden?
-		if ( 'blank' == $header_text_color ) :
+		if ('blank' == $header_text_color ) :
 	?>
 		.site-title,
 		.site-description {
@@ -80,7 +80,7 @@ function eighties_header_style() {
 		}
 	<?php endif; ?>
 
-	<?php if ( 'blank' == get_header_textcolor() ) : ?>
+	<?php /* if ( 'blank' == get_header_textcolor() ) : ?>
 		<?php
 			// If the header height is different than 400, let's calculate a padding.
 			if ( 400 != $header->height ) :
@@ -102,7 +102,7 @@ function eighties_header_style() {
 				padding: <?php echo ( $header->height / 4 / 16 ) ?>em 0;
 			}
 		<?php endif; ?>
-	<?php endif; ?>
+	<?php endif; */ ?>
 
 	</style>
 	<?php
