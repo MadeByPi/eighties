@@ -19,7 +19,7 @@ function eighties_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'eighties_custom_header_args', array(
 		'default-image'          => get_template_directory_uri() . '/images/header-default.jpg',
 		'default-text-color'     => 'ffffff',
-		'height'                 => 600,
+		'height'                 => 400,
 		'flex-height'            => true,
 		'flex-width'             => true,
 		'wp-head-callback'       => 'eighties_header_style',
@@ -82,8 +82,8 @@ function eighties_header_style() {
 
 	<?php if ( 'blank' == get_header_textcolor() ) : ?>
 		<?php
-			// If the header height is different than 600, let's calculate a padding.
-			if ( 600 != $header->height ) :
+			// If the header height is different than 400, let's calculate a padding.
+			if ( 400 != $header->height ) :
 		?>
 			.site-branding {
 				padding: <?php echo ( $header->height / 2 / 16 ); ?>em 0;
@@ -95,8 +95,8 @@ function eighties_header_style() {
 		<?php endif; ?>
 	<?php else : ?>
 		<?php
-			// If the header height is different than 600, let's calculate a padding.
-			if ( 600 != $header->height ) :
+			// If the header height is different than 400, let's calculate a padding.
+			if ( 400 != $header->height ) :
 		?>
 			.site-branding {
 				padding: <?php echo ( $header->height / 4 / 16 ) ?>em 0;
@@ -128,8 +128,8 @@ function eighties_admin_header_style() {
 			font-size: 16px;
 			<?php if ( 'blank' == get_header_textcolor() ) : ?>
 				<?php
-					// If the header height is different than 600, let's calculate a padding.
-					if ( 600 != $header->height ) :
+					// If the header height is different than 400, let's calculate a padding.
+					if ( 400 != $header->height ) :
 				?>
 					padding: <?php echo ( $header->height / 2 / 16 ); ?>em 0;
 				<?php else : ?>
@@ -137,8 +137,8 @@ function eighties_admin_header_style() {
 				<?php endif; ?>
 			<?php else :  ?>
 				<?php
-					// If the header height is different than 600, let's calculate a padding.
-					if ( 600 != $header->height ) :
+					// If the header height is different than 400, let's calculate a padding.
+					if ( 400 != $header->height ) :
 				?>
 					padding: <?php echo ( $header->height / 4 / 16 ); ?>em 0;
 				<?php else : ?>

@@ -1,56 +1,63 @@
 /**
  * Scripts for the custom header.
 */
-(function( $ ) {
+(function( w , d, $ ) {
+
+    var
+        $window =$( w),
+        $masthead = $( '#masthead'),
+        $siteBranding = $( '.site-branding' );
+
 	// Set backstretch, because it's more browser friendly for setting a background image.
-	$( '#masthead' ).backstretch( $( '#masthead .screen-reader-text' ).data( 'backstretch' ) );
+	$masthead.backstretch( $masthead.find('.screen-reader-text' ).data( 'backstretch' ) );
 
 	// Set the height of the masthead. We use this height below.
-	$( '#masthead' ).data( 'height', $( '#masthead' ).outerHeight() );
+	$masthead.data( 'height', $masthead.outerHeight() );
 
-	$( window ).scroll( function( event ) {
+	$window.on('scroll', function( e ) {
 
-		if ( $( window ).width() > 800 ) {
-			var position = window.scrollY,
-				bottom   = window.innerHeight - document.getElementById( 'colophon' ).offsetHeight,
-				height   = $( '#masthead' ).data( 'height' ),
+        var height = $masthead.data( 'height' );
+
+		if ( $window.width() > 800 ) {
+			var position = w.scrollY,
+				bottom   = w.innerHeight - d.getElementById( 'colophon' ).offsetHeight,
 				content  = $( '#content' ).offset().top,
 				footer   = $( '#colophon' ).offset().top - position;
 
 			if ( position > 0 && content > position && footer > bottom ) {
 				if ( position < height ) {
-					$( '#masthead' ).css({
+					$masthead.css({
 						'height' : height - position + 'px',
 						'overflow' : 'hidden'
 					});
 
-					$( '.site-branding' ).css({
+					$siteBranding.css({
 						'opacity' : ( 1 - position / height * 2 )
 					});
 				} else {
-					$( '#masthead' ).css({
+					$masthead.css({
 						'height' : '0px'
 					});
 				}
 			} else if ( position <= 0 ) {
-				$( '#masthead' ).css({
+				$masthead.css({
 					'height' : height
 				});
 
-				$( '.site-branding' ).css({
+				$siteBranding.css({
 					'opacity' : 1
 				});
 			}
 
 		} else {
-			$( '#masthead' ).css({
-				'height' : height + "px",
+			$masthead.css({
+				'height' : height + "px"
 			});
 
-			$( '.site-branding' ).css({
+			$siteBranding.css({
 				'opacity' : 1
 			});
         }
     });
 
-}( jQuery ));
+}(window,  document, window.jQuery ));

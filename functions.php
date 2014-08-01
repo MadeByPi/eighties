@@ -174,7 +174,7 @@ function eighties_body_font_url() {
 	 * 'off'. Do not translate into your own language.
 	 */
 	if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'eighties' ) ) {
-		$font_url = add_query_arg( 'family', urlencode( 'Open Sans:400italic,700italic,400,700' ), "//fonts.googleapis.com/css" );
+		$font_url = add_query_arg( 'family', urlencode( 'Open Sans:400italic,700italic,300,400,700' ), "//fonts.googleapis.com/css" );
 	}
 
 	return $font_url;
@@ -186,10 +186,10 @@ function eighties_styles() {
 	$suffix = defined( 'STYLES_DEBUG' ) && STYLES_DEBUG ? '.css' : '.min.css';
 
 	// Add Righteous font, used in the main stylesheet.
-	wp_enqueue_style( 'eighties-header', eighties_header_font_url(), array(), null );
+	//wp_enqueue_style( 'eighties-header', eighties_header_font_url(), array(), null );
 
 	// Add Raleway font, used in the main stylesheet.
-	wp_enqueue_style( 'eighties-headings', eighties_headings_font_url(), array(), null );
+	//wp_enqueue_style( 'eighties-headings', eighties_headings_font_url(), array(), null );
 
 	// Add Open Sans font, used in the main stylesheet.
 	wp_enqueue_style( 'eighties-body', eighties_body_font_url(), array(), null );
@@ -241,11 +241,11 @@ function eighties_scripts() {
 			'version' => '20140711',
 			'footer'  => true
 		),
-		'eighties-header' => array(
+		/*'eighties-header' => array(
 			'deps'    => array( 'backstretch' ),
 			'version' => '20140711',
 			'footer'  => true
-		),
+		),*/
 		'skip-link-focus-fix' => array(
 			'deps'    => false,
 			'version' => '20140711',
@@ -279,9 +279,9 @@ function eighties_scripts() {
 		wp_enqueue_script( 'eighties-portfolio' );
 	}
 
-	if ( eighties_header_image() ) {
+	/*if ( eighties_header_image() ) {
 		wp_enqueue_script( 'eighties-header' );
-	}
+	}*/
 }
 add_action( 'wp_enqueue_scripts', 'eighties_scripts' );
 
