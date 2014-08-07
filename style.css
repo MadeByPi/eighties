@@ -1809,7 +1809,7 @@ a:active {
 .js #secondary .widgets-wrapper:after {
   clear: both;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) {
   .js #secondary .widgets-wrapper {
     padding-left: 2em;
     padding-right: 2em;
@@ -1927,13 +1927,13 @@ a:active {
   float: left;
   width: 33.3333333%;
 }
-@media all and (max-width: 960px) {
+@media all and (max-width: 1280px) {
   .no-js #secondary {
     float: left;
     width: 41.6666667%;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 960px) {
   .no-js #secondary {
     float: none;
     width: 100%;
@@ -1943,7 +1943,7 @@ a:active {
 /** ---:[ Without JavaScript ]:--- */
 .no-js #content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1963,19 +1963,19 @@ a:active {
 .no-js #main {
   margin-right: 3em;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1600px) {
   .no-js #content {
     padding-left: 3em;
     padding-right: 3em;
   }
 }
-@media all and (max-width: 960px) {
+@media all and (max-width: 1280px) {
   .no-js #primary {
     float: left;
     width: 58.3333333%;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 960px) {
   .no-js #primary {
     float: none;
     width: 100%;
@@ -2913,7 +2913,7 @@ object {
 /** ---:[ With JavaScript ]:--- */
 /** -----------------------------------------------------:[ 14.0 - Header ]:---------- */
 .site {
-  /* hide the site header texts if it's a .featured header */
+  /* adjust the site header texts if it's a .featured header */
 }
 .site-header {
   max-height: 400px;
@@ -2962,24 +2962,39 @@ object {
 .site-description {
   margin-top: 1.5em;
 }
-.featured .site-description,
+.featured .site-branding {
+  padding: 0.5em 0 0 30px;
+  text-align: left;
+}
 .featured .site-title {
+  opacity: 0.5;
+  font-size: 1.5em;
+  text-shadow: 0.05rem 0.05rem 0rem rgba(17, 17, 17, 0.6);
+}
+.featured .site-description {
   visibility: hidden;
+  margin-bottom: 100%;
 }
 @media screen and (max-width: 1000px) {
   .site-branding {
-    padding: 4.5em 0!important;
+    padding: 4.5em 0;
     /* theme has inline styles in html - needs investigate so we don't need important here */
   }
   .site-title {
     font-size: 80px;
     font-size: 4.444444444444445rem;
   }
+  .featured .site-branding {
+    padding-left: 0.5em;
+  }
 }
 @media screen and (max-width: 320px) {
   .site-branding {
-    padding: 1em 0 0.25em !important;
+    padding: 1em 0 0.25em;
     /* theme has inline styles in html - needs investigate so we don't need important here */
+  }
+  .featured .site-branding {
+    padding: 0.5em 0 0 .5em;
   }
   .site-title {
     font-size: 54px;
@@ -3032,7 +3047,7 @@ object {
 }
 .admin-bar .site-toggles .main-navigation-toggle,
 .admin-bar .site-toggles .widget-area-toggle {
-  top: 64px;
+  top: 78px;
 }
 @media screen and (max-width: 1000px) {
   .site-toggles {
@@ -3066,14 +3081,14 @@ object {
 }
 /** -----------------------------------------------------:[ 14.0 - Footer ]:---------- */
 #colophon {
-  padding-bottom: 6em;
+  padding-bottom: 2em;
   background: #2d2d2d;
   color: #7a7a7a;
 }
 /** ---:[ Site Supplementary ]:--- */
 #site-supplementary {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 3em;
@@ -3087,7 +3102,7 @@ object {
 #site-supplementary:after {
   clear: both;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) {
   #site-supplementary {
     padding-left: 2em;
     padding-right: 2em;

@@ -44,25 +44,53 @@
 	&-description {
 		margin-top: 1.5em;
 	}
+	
 
-    /* hide the site header texts if it's a .featured header */
-    .featured &-description, .featured &-title {
-        visibility: hidden;
+    /* adjust the site header texts if it's a .featured header */
+    .featured &-branding {
+		padding: 0.5em 0 0 30px;
+		text-align:left;
+	}
+	
+	.featured &-title {
+		opacity: 0.5;
+		font-size: 1.5em;
+		text-shadow: 0.05rem 0.05rem 0rem rgba(17, 17, 17, 0.6);
+	}
+	
+	.featured &-description {
+		visibility:hidden;
+		margin-bottom: 100%;
+	}
+	
+	.featured &-description, .featured &-title {
+      //  opacity: 0.5;
+		//font-size: 1.5em;
     }
+	
+	
+	
 
 	@media screen and (max-width: 1000px) {
 		&-branding {
-			padding: 4.5em 0!important; /* theme has inline styles in html - needs investigate so we don't need important here */
+			padding: 4.5em 0; /* theme has inline styles in html - needs investigate so we don't need important here */
 		}
 		&-title {
 			.font-size( 80 );
+		}
+		.featured &-branding {
+			padding-left: 0.5em;
 		}
 	}
 
 	@media screen and (max-width: 320px) {
 		&-branding {
-			padding: 1em 0 0.25em !important; /* theme has inline styles in html - needs investigate so we don't need important here */
+			padding: 1em 0 0.25em; /* theme has inline styles in html - needs investigate so we don't need important here */
 		}
+		.featured &-branding {
+			padding: 0.5em 0 0 .5em;
+		}
+		
 		&-title {
 			.font-size( 54 );
 		}
@@ -108,7 +136,7 @@
 	.admin-bar & {
 		.main-navigation-toggle,
 		.widget-area-toggle {
-			top: 64px;
+			top: 78px;
 		}
 	}
 	@media screen and (max-width: 1000px) {
