@@ -113,7 +113,7 @@
 }
 /** ---:[ Pages ]:--- */
 .page {
-	
+
 }
 
 /** ---:[ Sticky Posts ]:--- */
@@ -121,7 +121,7 @@
 	.entry {
 		&-title {
 			a {
-				
+
 			}
 		}
 	}
@@ -146,7 +146,7 @@
 	.entry {
 		&-meta {
 			a {
-				
+
 			}
 		}
 	}
@@ -156,7 +156,7 @@
 		.entry {
 			&-header,
 			&-summary {
-				
+
 			}
 			&-summary {
 				p:last-child {
@@ -193,7 +193,7 @@
 		.has-post-thumbnail {
 			.backstretch {
 				img {
-					
+
 				}
 			}
 		}
@@ -222,7 +222,7 @@
 		// For actual pages.
 		.entry {
 			&-title {
-				
+
 			}
 		}
 	}
@@ -432,8 +432,14 @@
 
 /** ----------------------------------------:[ Jetpack Portfolio ]:--- */
 #portfolio-wrapper {
+
+    @textShadow-dark: .1rem .1rem .1rem rgba(0,0,0,.4);
+    @textShadow-light: 0 0 .1rem rgba(255, 255, 255, 0.2);
+
 	.clearfix();
 	.jetpack-portfolio {
+        transform: translate3D(0,0,0);
+
 		padding: 0;
 		border-bottom: 0;
 		img {
@@ -444,33 +450,51 @@
 			&-details {
 				position: relative;
 				.max-width( 800px );
-				background: @dark;
+				background: darken(desaturate(@base-01,80%),33%);
+
 				&:hover {
 					.project {
 						&-image {
-							opacity: 1;
+							opacity: .9;
 						}
+
+                        &-entry-meta, &-title {
+                           background-color: @base-01;
+                        }
+
+                        &-entry-meta {
+                          a {
+                            color: @light;
+                            &:hover {
+                                color: darken(@base-01,30%);
+                            }
+                          }
+                        }
 					}
 				}
 			}
+
 			&-image {
 				opacity: .2;
+                background-color: #fff;
 				.transition( ~'opacity 200ms linear' );
 			}
+
 			&-entry-meta {
+
 				font-size: .75em;
-				color: darken( @light, 20% );
+				color: darken( @light, 10% );
 				a {
-					color: darken( @light, 20% );
-					&:hover {
-						color: #FFF;
-					}
+					color: darken( @light, 10% );
+                    text-shadow: @textShadow-light;
 				}
 			}
 			&-title {
 				font-size: 1.8em;
 				margin-top: 20%;
 				margin-bottom: .5em;
+                text-shadow: @textShadow-dark;
+
 				a {
 					color: #FFF;
 					&:hover {

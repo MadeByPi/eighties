@@ -1,9 +1,11 @@
 <?php
 /**
- * Template Name: Portfolio
+ * Template Name: Homepage Portfolio
+ *
+ * A copy of the regular portfolio page, ready for customisation for homepage...
  *
  * @package Eighties
- * @author Justin Kopepasah
+ * @author Justin Kopepasah / Mike Almond
  * @since 1.0.0
  */
 
@@ -40,12 +42,12 @@ get_header(); ?>
 					wp_reset_postdata();
 				?>
 
-				<nav class="navigation paging-navigation" role="navigation">
+				<!--nav class="navigation paging-navigation" role="navigation">
 					<h1 class="screen-reader-text"><?php _e( 'Porfolio page.', 'eighties' ); ?></h1>
 					<div class="nav-links">
 						<a href="<?php echo get_post_type_archive_link( 'jetpack-portfolio' ); ?>" class="btn"><?php _e( 'View Portfolio', 'eighties' ); ?></a>
-					</div><!-- .nav-links -->
-				</nav><!-- .navigation -->
+					</div><
+				</nav-->
 
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template

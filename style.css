@@ -2686,6 +2686,7 @@ a:active {
   clear: both;
 }
 #portfolio-wrapper .jetpack-portfolio {
+  transform: translate3D(0, 0, 0);
   padding: 0;
   border-bottom: 0;
 }
@@ -2699,13 +2700,24 @@ a:active {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  background: #2d2d2d;
+  background: #161e21;
 }
 #portfolio-wrapper .jetpack-portfolio .project-details:hover .project-image {
-  opacity: 1;
+  opacity: .9;
+}
+#portfolio-wrapper .jetpack-portfolio .project-details:hover .project-entry-meta,
+#portfolio-wrapper .jetpack-portfolio .project-details:hover .project-title {
+  background-color: #009edf;
+}
+#portfolio-wrapper .jetpack-portfolio .project-details:hover .project-entry-meta a {
+  color: #ececec;
+}
+#portfolio-wrapper .jetpack-portfolio .project-details:hover .project-entry-meta a:hover {
+  color: #003246;
 }
 #portfolio-wrapper .jetpack-portfolio .project-image {
   opacity: .2;
+  background-color: #fff;
   -webkit-transition: opacity 200ms linear;
   -moz-transition: opacity 200ms linear;
   -o-transition: opacity 200ms linear;
@@ -2713,18 +2725,17 @@ a:active {
 }
 #portfolio-wrapper .jetpack-portfolio .project-entry-meta {
   font-size: .75em;
-  color: #b9b9b9;
+  color: #d3d3d3;
 }
 #portfolio-wrapper .jetpack-portfolio .project-entry-meta a {
-  color: #b9b9b9;
-}
-#portfolio-wrapper .jetpack-portfolio .project-entry-meta a:hover {
-  color: #FFF;
+  color: #d3d3d3;
+  text-shadow: 0 0 0.1rem rgba(255, 255, 255, 0.2);
 }
 #portfolio-wrapper .jetpack-portfolio .project-title {
   font-size: 1.8em;
   margin-top: 20%;
   margin-bottom: .5em;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
 }
 #portfolio-wrapper .jetpack-portfolio .project-title a {
   color: #FFF;
@@ -3272,6 +3283,7 @@ input#carousel-reblog-submit-green:active {
   padding-bottom: 1em;
 }
 .what-we-do > div > h5 {
+  font-size: 1em;
   background-color: #f5f5f5;
   padding-left: .5em;
   margin-bottom: 1em;
